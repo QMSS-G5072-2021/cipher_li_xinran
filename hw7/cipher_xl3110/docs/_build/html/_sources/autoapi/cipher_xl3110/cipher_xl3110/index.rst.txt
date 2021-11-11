@@ -1,0 +1,39 @@
+:py:mod:`cipher_xl3110.cipher_xl3110`
+=====================================
+
+.. py:module:: cipher_xl3110.cipher_xl3110
+
+
+Module Contents
+---------------
+
+
+Functions
+~~~~~~~~~
+
+.. autoapisummary::
+
+   cipher_xl3110.cipher_xl3110.cipher
+
+
+
+.. py:function:: cipher(text, shift, encrypt=True)
+
+   This function can replace each letter in a sentence or word by another letter that is at some fixed number of positions down or up of the alphabet.
+
+   :param text: A text string.
+   :type text: str
+   :param shift: Unit of alphabet to shift along the alphabet string (-/+ for left and right).
+   :type shift: int
+   :param encrypt: Default is True, whether the text is to be encrypted or decrypted.
+   :type encrypt: bool
+
+   :returns: The encrypted or decrypted string.
+   :rtype: str
+
+   .. rubric:: Examples
+
+   >>> cipher("abc", 1)
+   'bcd'
+
+
